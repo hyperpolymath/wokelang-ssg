@@ -52,11 +52,13 @@ to main() {
 }
 
 to createConfig() gives back SiteConfig {
+    // Load from config.yaml or use defaults
+    // This is a general-purpose SSG, config comes from user
     give back {
-        title: "WokeLang",
-        url: "https://wokelang.org",
-        description: "A Human-Centered Programming Language",
-        author: "Jonathan D.A. Jewell",
+        title: "My Site",
+        url: "https://example.com",
+        description: "A static site built with WokeLang SSG",
+        author: "Site Author",
         contentDir: "content",
         outputDir: "public",
         templatesDir: "templates"

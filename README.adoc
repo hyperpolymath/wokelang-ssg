@@ -1,13 +1,16 @@
-= WokeLang SSG - Static Site Generator for wokelang.org
+= WokeLang SSG - General-Purpose Static Site Generator
 :toc:
 :toclevels: 3
 
 == Overview
 
-WokeLang SSG is a static site generator written *in WokeLang itself*, serving as both:
+WokeLang SSG is a general-purpose static site generator written *in WokeLang itself*.
 
-1. **Production SSG** - Generates the official wokelang.org website
-2. **Language Demo** - Showcases WokeLang's consent-driven computing, gratitude system, and emotive programming
+Part of the **poly-ssg** family (alongside casket-ssg, hackenbush-ssg, etc.), it provides:
+
+1. **SSG Tool** - Generate static sites from markdown + frontmatter
+2. **WokeLang Showcase** - Demonstrates consent-driven computing, gratitude system, and emotive programming
+3. **MCP Integration** - Works with poly-ssg-mcp for SSG operations
 
 == Architecture
 

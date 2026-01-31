@@ -5,30 +5,32 @@
 (ecosystem
   (version "1.0.0")
   (name "wokelang-ssg")
-  (type "application")
-  (purpose "Static site generator for wokelang.org, written in WokeLang")
+  (type "tool")
+  (purpose "General-purpose static site generator written in WokeLang")
 
   (position-in-ecosystem
-    "Part of the WokeLang language ecosystem. Serves dual purpose as both "
-    "the official website generator AND a comprehensive demo of WokeLang's "
-    "consent-driven computing, gratitude system, and emotive programming features.")
+    "Part of the poly-ssg family of static site generators. Provides SSG "
+    "capabilities using WokeLang as the implementation language, demonstrating "
+    "consent-driven computing in a practical tool.")
 
   (related-projects
-    (sibling-standard "wokelang" "The WokeLang programming language implementation")
+    (sibling-standard "casket-ssg" "Haskell SSG in poly-ssg family")
+    (sibling-standard "hackenbush-ssg" "Another poly-ssg member")
     (sibling-standard "poly-ssg-mcp" "MCP server for SSG operations")
-    (sibling-standard "casket-ssg" "Haskell SSG design inspiration")
     (dependency "wokelang" "Language runtime and interpreter")
     (dependency "rescript-tea" "Frontend TEA architecture")
     (dependency "cadre-tea-router" "Proven-safe URL routing")
     (dependency "a2ml" "Positioning and layout")
     (dependency "rescript-dom-mounter" "Formally verified DOM mounting")
-    (consumer "wokelang.org" "Official WokeLang website"))
+    (potential-consumer "wokelang/site" "WokeLang website uses this SSG")
+    (potential-consumer "*" "Any site wanting WokeLang-based SSG"))
 
   (what-this-is
-    "A static site generator written entirely in WokeLang, demonstrating "
-    "consent-driven file I/O, gratitude system for dependencies, and "
-    "emotive programming. Generates wokelang.org with ReScript+TEA frontend.")
+    "A general-purpose static site generator written entirely in WokeLang. "
+    "Part of the poly-ssg ecosystem. Demonstrates consent-driven file I/O, "
+    "gratitude system, and emotive programming in a real-world tool.")
 
   (what-this-is-not
-    "Not a general-purpose SSG (specialized for wokelang.org). "
-    "Not written in Rust/JS (written in WokeLang itself)."))
+    "Not a website (it's a tool). "
+    "Not written in Rust/JS/Go (written in WokeLang itself). "
+    "Not site-specific (general-purpose, like casket-ssg)."))
