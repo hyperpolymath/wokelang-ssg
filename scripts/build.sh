@@ -6,11 +6,12 @@ set -e
 
 echo "🏗️  Building wokelang-ssg..."
 
-# Build frontend (ReScript)
-echo "📦 Building ReScript frontend..."
-cd frontend
-deno task build
-cd ..
+# TODO: Build frontend (ReScript) when a2ml is published to npm
+# For now, skip ReScript build and use static HTML
+# echo "📦 Building ReScript frontend..."
+# cd frontend
+# deno task build
+# cd ..
 
 # TODO: Run WokeLang SSG (when wokelang interpreter is ready)
 # echo "🚀 Running WokeLang SSG..."
